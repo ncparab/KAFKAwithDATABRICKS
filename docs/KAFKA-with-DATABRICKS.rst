@@ -66,6 +66,11 @@ STEP 3 : Install Kafka
    
 .. image:: kafka4.png
    :width: 800px
+   :height: 100px
+   :alt: alternate text 
+   
+.. image:: kafka5.png
+   :width: 800px
    :height: 200px
    :alt: alternate text 
    
@@ -78,7 +83,7 @@ STEP 3 : Start the server
    $ ls -ltr ./
    $ bin/zookeeper-server-start.sh config/zookeeper.properties
 
-.. image:: kafka5.png
+.. image:: kafka6.png
    :width: 800px
    :height: 400px
    :alt: alternate text 
@@ -89,7 +94,7 @@ STEP 3 : Start the server
    $ cd kafka_2.10-0.10.2.2
    $ bin/kafka-server-start.sh config/server.properties
    
-.. image:: kafka6.png
+.. image:: kafka7.png
    :width: 800px
    :height: 400px
    :alt: alternate text 
@@ -103,7 +108,7 @@ STEP 4 : Create Topic
    $ cd kafka_2.10-0.10.2.2
    $ bin/kafka-topics.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic test
    
-.. image:: kafka7.png
+.. image:: kafka8.png
    :width: 800px
    :height: 200px
    :alt: alternate text 
@@ -116,7 +121,13 @@ STEP 4 : Create Topic
    $ cd kafka_2.10-0.10.2.2
    $ bin/kafka-topics.sh --list --zookeeper localhost:2181
    
-STEP 5 : Start producer and send some message to consumer
+.. image:: kafka9.png
+   :width: 800px
+   :height: 200px
+   :alt: alternate text 
+   
+STEP 5 : Start producer and send some messages to consumer
+============================================================
 
 .. code-block:: bash
 
@@ -124,12 +135,12 @@ STEP 5 : Start producer and send some message to consumer
    $ cd kafka_2.10-0.10.2.2
    $ echo "This is another message1" | bin/kafka-console-producer.sh --broker-list localhost:9092 --topic test
    
-.. image:: kafka8.png
+.. image:: kafka10.png
    :width: 800px
    :height: 200px
    :alt: alternate text 
    
-.. image:: kafka9.png
+.. image:: kafka11.png
    :width: 800px
    :height: 200px
    :alt: alternate text 
@@ -142,7 +153,7 @@ STEP 6 : Start the consumer
    $ cd kafka_2.10-0.10.2.2
    $ bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic test --from-beginning
    
-.. image:: kafka10.png
+.. image:: kafka12.png
    :width: 800px
    :height: 200px
    :alt: alternate text 
