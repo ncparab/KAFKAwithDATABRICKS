@@ -146,6 +146,7 @@ STEP 5 : Start producer and send some messages to consumer
    :alt: alternate text 
    
 STEP 6 : Start the consumer
+============================
 
 .. code-block:: bash
 
