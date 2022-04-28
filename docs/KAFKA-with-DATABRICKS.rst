@@ -22,8 +22,8 @@ STEP 1 : Login to Databricks
 :ref: https://community.cloud.databricks.com/login.html;jsessionid=webapp-shard-ce2-webapp-5c5bbd9f87-ngfbqvocwt5f40zv8o2e01k0plh7l.webapp-shard-ce2-webapp-5c5bbd9f87-ngfbq
 
 .. image:: databrickslogin.PNG
-   :width: 500px
-   :height: 200px
+   :width: 700px
+   :height: 300px
    :alt: alternate text
    
 STEP 2 : In workspace, go to user and create files
@@ -156,6 +156,6 @@ STEP 6 : Start the consumer
    
 .. image:: kafka12.PNG
    :width: 800px
-   :height: 200px
+   :height: 300px
    :alt: alternate text 
 
